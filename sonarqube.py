@@ -54,6 +54,8 @@ def make_sonar_report(issues):
 
 def main(args):
     fname = args[1]
+    print("#", fname, "#", sep="-")
+
     if not os.path.exists(fname):
         sys.exit(f"{LOG_PREFIX} file not found: {fname}")
 
